@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{AD925B62-4EEB-FE8C-F1B2-C482363AF8B2}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "OTUS_Learn",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
