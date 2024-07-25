@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "Core/CharacterBase.h"
 #include "OTUS_LearnCharacter.generated.h"
+
 
 class USpringArmComponent;
 class UCameraComponent;
@@ -16,9 +18,10 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class AOTUS_LearnCharacter : public ACharacter
+class AOTUS_LearnCharacter : public ACharacterBase
 {
 	GENERATED_BODY()
+
 
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
