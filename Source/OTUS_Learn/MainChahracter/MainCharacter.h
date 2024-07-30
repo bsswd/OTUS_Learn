@@ -1,12 +1,11 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// OTUS Learn Project. Made by Alex Sinkin (c)
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
-#include "Core/CharacterBase.h"
-#include "OTUS_LearnCharacter.generated.h"
+#include "OTUS_Learn/Core/CharacterBase.h"
+#include "MainCharacter.generated.h"
 
 
 class USpringArmComponent;
@@ -17,8 +16,8 @@ struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
-UCLASS(config=Game)
-class AOTUS_LearnCharacter : public ACharacterBase
+UCLASS(config = Game)
+class AMainCharacter : public ACharacterBase
 {
 	GENERATED_BODY()
 
@@ -30,7 +29,7 @@ class AOTUS_LearnCharacter : public ACharacterBase
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
-	
+
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputMappingContext* DefaultMappingContext;
@@ -48,8 +47,7 @@ class AOTUS_LearnCharacter : public ACharacterBase
 	UInputAction* LookAction;
 
 public:
-	AOTUS_LearnCharacter();
-	
+	AMainCharacter();
 
 protected:
 
@@ -58,12 +56,12 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
+
 
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
 	// To add mapping context
 	virtual void BeginPlay();
 
