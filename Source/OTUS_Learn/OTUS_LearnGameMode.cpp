@@ -7,7 +7,7 @@
 AOTUS_LearnGameMode::AOTUS_LearnGameMode()
 {
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPerson/Blueprints/BP_MainCharacter"));
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/Characters/MainCharacter/Blueprints/BP_MainCharacter"));
 
 	if (PlayerPawnBPClass.Class != NULL)
 	{
