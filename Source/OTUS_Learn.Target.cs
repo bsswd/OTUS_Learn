@@ -12,10 +12,16 @@ public class OTUS_LearnTarget : TargetRules
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
 		ExtraModuleNames.Add("OTUS_Learn");
         RegisterModulesCreated();
-    }
+        RegisterModulesCreatedByRider();
+	}
 
     private void RegisterModulesCreated()
     {
         ExtraModuleNames.AddRange(new string[] { "CustomConfig" });
+    }
+
+    private void RegisterModulesCreatedByRider()
+    {
+	    ExtraModuleNames.AddRange(new string[] { "CustomConfig" });
     }
 }

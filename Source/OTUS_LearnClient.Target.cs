@@ -11,10 +11,16 @@ public class OTUS_LearnClientTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
         RegisterModulesCreated();
-    }
+        RegisterModulesCreatedByRider();
+	}
 
     private void RegisterModulesCreated()
     {
         ExtraModuleNames.AddRange(new string[] { "CustomConfig" });
+    }
+
+    private void RegisterModulesCreatedByRider()
+    {
+	    ExtraModuleNames.AddRange(new string[] { "CustomConfig" });
     }
 }

@@ -1,8 +1,9 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
+#include "UObject/Object.h"
 #include "UObject/NoExportTypes.h"
 #include "CustomConfigObject.generated.h"
 
@@ -15,7 +16,7 @@ class CUSTOMCONFIG_API UCustomConfigObject : public UObject
 public:
 	UFUNCTION(BlueprintCallable, Category="CustomConfig")
 	void LoadSettings(bool bBroadcastSettingsChanged = true);
-
+	
 	UFUNCTION(BlueprintCallable, Category="CustomConfig")
 	void SaveSettings(bool bBroadcastSettingsChanged = true);
 

@@ -1,4 +1,5 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
+
 
 #include "CustomConfigObject.h"
 #include "Misc/ConfigCacheIni.h"
@@ -7,8 +8,8 @@
 void UCustomConfigObject::LoadSettings(bool bBroadcastSettingsChanged)
 {
 	FString CustomConfigIni;
-	FConfigCacheIni::LoadGlobalIniFile(CustomConfigIni, *GetConfigFilename(this), nullptr, true);
-	LoadConfig(NULL, NULL, UE::LCPF_PropagateToChildDefaultObjects, NULL);
+	FConfigCacheIni::LoadGlobalIniFile(CustomConfigIni, *GetConfigFilename(this), nullptr,true);
+	LoadConfig(NULL,NULL, UE::LCPF_PropagateToChildDefaultObjects, NULL);
 	if (bBroadcastSettingsChanged)
 	{
 		BroadcastSettingsChanged();
@@ -35,7 +36,7 @@ void UCustomConfigObject::BroadcastSettingsChanged()
 			{
 				CustomConfigObj->LoadConfig();
 				CustomConfigObj->OnSettingsChanged.Broadcast();
-			}
+			}	
 		}
 	}
 }
