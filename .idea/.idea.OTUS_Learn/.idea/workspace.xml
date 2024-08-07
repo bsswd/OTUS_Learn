@@ -12,17 +12,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c5d3d7-2824-45a1-a228-86f3bcfc0e53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestModule/Private/TestActor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestModule/Private/TestModule.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestModule/Public/TestActor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestModule/Public/TestModule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestModule/TestModule.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OTUS_Learn.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/OTUS_Learn.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CustomConfig/CustomConfig.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CustomConfig/CustomConfig.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CustomConfig/Private/CustomConfig.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CustomConfig/Private/CustomConfig.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CustomConfig/Private/CustomConfigObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CustomConfig/Private/CustomConfigObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CustomConfig/Public/CustomConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CustomConfig/Public/CustomConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CustomConfig/Public/CustomConfigObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CustomConfig/Public/CustomConfigObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/AsyncLevelLoad.uplugin" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/AsyncLevelLoad.uplugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/AsyncLevelLoad.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/AsyncLevelLoad.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoadSceneComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoadSceneComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoadSceneComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoadSceneComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/ObjectReplication.uplugin" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/ObjectReplication.uplugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/ObjectReplication.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/ObjectReplication.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Private/ObjectReplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Private/ObjectReplication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Public/ObjectReplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Public/ObjectReplication.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnEditor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,37 +45,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2kJTsKDH6uWZHcedmbXpeVhtlJZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C++ Project.OTUS_Learn.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CurrentWork",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C++ Project.OTUS_Learn.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;CurrentWork&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\User\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\User\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.OTUS_Learn">
     <configuration name="OTUS_Learn" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -1866,7 +1879,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723000885868</updated>
-      <workItem from="1723000887250" duration="7542000" />
+      <workItem from="1723000887250" duration="12307000" />
+      <workItem from="1723015819740" duration="3086000" />
     </task>
     <servers />
   </component>

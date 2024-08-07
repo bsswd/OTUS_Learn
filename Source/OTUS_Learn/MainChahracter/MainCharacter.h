@@ -88,4 +88,8 @@ private:
 	// Sprint
 	void StartSprint();
 	void StopSprint();
+
+protected:
+	UFUNCTION(Blueprintable)
+	void SpawnCube();
 };

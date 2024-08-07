@@ -22,6 +22,6 @@ public class OTUS_LearnTarget : TargetRules
 
     private void RegisterModulesCreatedByRider()
     {
-	    ExtraModuleNames.AddRange(new string[] { "CustomConfig" });
+	    ExtraModuleNames.AddRange(new string[] { "CustomConfig", "TestModule" });
     }
 }

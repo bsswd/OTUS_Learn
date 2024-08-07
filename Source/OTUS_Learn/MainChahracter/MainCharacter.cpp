@@ -10,6 +10,9 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "K2Node_SpawnActorFromClass.h"
+#include "TestModule/Public/TestActor.h"
+#include "UniversalObjectLocators/UniversalObjectLocatorUtils.h"
 
 
 AMainCharacter::AMainCharacter()
@@ -121,4 +124,9 @@ void AMainCharacter::StartSprint()
 void AMainCharacter::StopSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = 500.f;
+}
+
+void AMainCharacter::SpawnCube()
+{
+	
 }
