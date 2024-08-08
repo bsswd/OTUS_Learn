@@ -32,7 +32,7 @@ void AWeaponRanged::ShootLineTrace()
 	}
 	FHitResult HitResult;
 	FVector StartTrace = Mesh->GetSocketLocation(ShootStartSocket);
-	FVector EndTrace = StartTrace + GetActorForwardVector()*10000.f; //Replace hardcode to variable
+	FVector EndTrace = StartTrace + GetActorRightVector()*10000.f; //Replace hardcode to variable
 	GetWorld()->LineTraceSingleByChannel(HitResult, StartTrace, EndTrace, ECC_GameTraceChannel1);
 
 	if (!HitResult.IsValidBlockingHit())
