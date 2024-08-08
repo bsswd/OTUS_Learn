@@ -12,22 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c5d3d7-2824-45a1-a228-86f3bcfc0e53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponRanged.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Public/WeaponBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Public/WeaponRanged.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Models/Chars/SpaceMarine/Mesh/S_SpaceMarine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Models/Chars/SpaceMarine/Mesh/S_SpaceMarine.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OTUS_Learn.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/OTUS_Learn.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/OTUS_Learn.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/OTUS_Learn.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TestModule/Private/TestActor.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TestModule/Public/TestActor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/MainCharacter/Blueprints/BP_MainCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/MainCharacter/Blueprints/BP_MainCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponBase.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,28 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C++ Project.OTUS_Learn.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CurrentWork&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "C++ Project.OTUS_Learn.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "CurrentWork",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\User\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\User\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\User\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C++ Project.OTUS_Learn">
     <configuration name="OTUS_Learn" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -1881,6 +1869,7 @@
       <workItem from="1723028015209" duration="6583000" />
       <workItem from="1723088141088" duration="1396000" />
       <workItem from="1723089580654" duration="6946000" />
+      <workItem from="1723106811329" duration="2845000" />
     </task>
     <servers />
   </component>

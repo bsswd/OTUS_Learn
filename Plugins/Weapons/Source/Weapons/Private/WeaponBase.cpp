@@ -6,6 +6,8 @@
 AWeaponBase::AWeaponBase()
 {
 	PrimaryActorTick.bCanEverTick = true;
+	Mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
+	RootComponent = Mesh;
 }
 
 void AWeaponBase::BeginPlay()
