@@ -10,9 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
-#include "K2Node_SpawnActorFromClass.h"
-#include "TestModule/Public/TestActor.h"
-#include "UniversalObjectLocators/UniversalObjectLocatorUtils.h"
+#include "../../../Plugins/Weapons/Source/Weapons/Public/WeaponBase.h"
 
 
 AMainCharacter::AMainCharacter()
@@ -46,9 +44,10 @@ AMainCharacter::AMainCharacter()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	EquipDefaultWeapon();
 }
 
-
+//Input
 void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
@@ -59,19 +58,23 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 		}
 	}
 
-	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent)) {
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
 
+		//Jump
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
-
+		//Crouch
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Triggered, this, &AMainCharacter::StartCrouch);
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Completed, this, &AMainCharacter::StopCrouch);
-
+		//Sprint
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &AMainCharacter::StartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AMainCharacter::StopSprint);
-
+		//Move & Look
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AMainCharacter::Move);
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AMainCharacter::Look);
+		//Attack
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Triggered, this, &AMainCharacter::Attack);
 	}
 	else
 	{
@@ -79,6 +82,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	}
 }
 
+//Movement and action
 void AMainCharacter::Move(const FInputActionValue& Value)
 {
 	FVector2D MovementVector = Value.Get<FVector2D>();
@@ -126,7 +130,35 @@ void AMainCharacter::StopSprint()
 	GetCharacterMovement()->MaxWalkSpeed = 500.f;
 }
 
-void AMainCharacter::SpawnCube()
+//Weapon
+void AMainCharacter::EquipDefaultWeapon()
 {
+	if (!DefaultWeaponClass)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AMainCharacter::EquipDefaultWeapon(): DefaultWeaponClass is not valid!"));
+		return;
+	}
 	
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+	EquippedWeapon = GetWorld()->SpawnActor<AWeaponBase>(DefaultWeaponClass, GetActorTransform(), SpawnParams);
+	
+	if (!EquippedWeapon)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AMainCharacter::EquipDefaultWeapon(): EquippedWeapon is not valid!"));
+		return;
+	}
+
+	EquippedWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, WeaponAttachSocketName);
+	EquippedWeapon->OwnerCharacter = this;
+}
+
+void AMainCharacter::Attack(const FInputActionValue& Value)
+{
+	if (!EquippedWeapon)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AMainCharacter::EquipDefaultWeapon(): EquippedWeapon is not valid!"));
+		return;
+	}
+	EquippedWeapon->Attack();	
 }

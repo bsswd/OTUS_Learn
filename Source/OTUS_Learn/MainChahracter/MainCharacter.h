@@ -3,8 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "InputActionValue.h"
 #include "Logging/LogMacros.h"
 #include "OTUS_Learn/Core/CharacterBase.h"
+#include "../../../Plugins/Weapons/Source/Weapons/Public/WeaponBase.h"
 #include "MainCharacter.generated.h"
 
 
@@ -12,6 +14,7 @@ class USpringArmComponent;
 class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
+class AWeaponBase;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -21,75 +24,75 @@ class AMainCharacter : public ACharacterBase
 {
 	GENERATED_BODY()
 
-
-	/** Camera boom positioning the camera behind the character */
+	//Properties
+	//Camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
 
-	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
-	/** MappingContext */
+	//Movement and actions
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputMappingContext* DefaultMappingContext;
 
-	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* JumpAction;
 
-	/** Crouch Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* CrouchAction;
 
-	/** Sprint Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* SprintAction;
 
-	/** Move Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
 
-	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* AttackAction;
+
+protected:
+	//Weapon
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
+	TSubclassOf<AWeaponBase> DefaultWeaponClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
+	FName WeaponAttachSocketName;
+
+	
+
+	
+	//Consructor
 public:
 	AMainCharacter();
 
+	
+	//Functions
 protected:
-
-	/** Called for movement input */
-	void Move(const FInputActionValue& Value);
-
-	/** Called for looking input */
-	void Look(const FInputActionValue& Value);
-
-
-protected:
-	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	// To add mapping context
 	virtual void BeginPlay();
 
-public:
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	//Movement and actions
+	void Move(const FInputActionValue& Value);
+	void Look(const FInputActionValue& Value);
+	void Attack(const FInputActionValue& Value);
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
-	// Crouching
 	void StartCrouch();
 	void StopCrouch();
-
-private:
-	// Sprint
 	void StartSprint();
 	void StopSprint();
 
-protected:
-	UFUNCTION(Blueprintable)
-	void SpawnCube();
+	//Weapon
+	void EquipDefaultWeapon();
+	TObjectPtr<AWeaponBase> EquippedWeapon;
+
+	
+public:
+	//Camera
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };

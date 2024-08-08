@@ -12,30 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c5d3d7-2824-45a1-a228-86f3bcfc0e53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/TestModule/Private/TestActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestModule/Private/TestModule.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestModule/Public/TestActor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestModule/Public/TestModule.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestModule/TestModule.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Private/WeaponRanged.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Public/WeaponBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/Weapons/Source/Weapons/Public/WeaponRanged.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OTUS_Learn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Models/Chars/SpaceMarine/Mesh/S_SpaceMarine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Models/Chars/SpaceMarine/Mesh/S_SpaceMarine.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OTUS_Learn.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/OTUS_Learn.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/AsyncLevelLoad.uplugin" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/AsyncLevelLoad.uplugin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/AsyncLevelLoad.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/AsyncLevelLoad.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoad.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoadSceneComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Private/AsyncLevelLoadSceneComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoad.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoadSceneComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/AsyncLevelLoad/Source/AsyncLevelLoad/Public/AsyncLevelLoadSceneComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/ObjectReplication.uplugin" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/ObjectReplication.uplugin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/ObjectReplication.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/ObjectReplication.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Private/ObjectReplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Private/ObjectReplication.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Public/ObjectReplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ObjectReplication/Source/ObjectReplication/Public/ObjectReplication.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn.Target.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/MainChahracter/MainCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/OTUS_Learn/OTUS_Learn.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_Learn/OTUS_Learn.Build.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnClient.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnEditor.Target.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OTUS_LearnServer.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestModule/Private/TestActor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestModule/Public/TestActor.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -1880,7 +1875,12 @@
       <option name="presentableId" value="Default" />
       <updated>1723000885868</updated>
       <workItem from="1723000887250" duration="12307000" />
-      <workItem from="1723015819740" duration="3086000" />
+      <workItem from="1723015819740" duration="3989000" />
+      <workItem from="1723020551535" duration="504000" />
+      <workItem from="1723021101907" duration="2454000" />
+      <workItem from="1723028015209" duration="6583000" />
+      <workItem from="1723088141088" duration="1396000" />
+      <workItem from="1723089580654" duration="6946000" />
     </task>
     <servers />
   </component>
